@@ -332,7 +332,7 @@ jobs:
         run: v fmt -verify .
 
   check-docs:
-    needs: [vab-compilation, linux-to-other-platforms-compilation]
+    needs: [linux-to-other-platforms-compilation]
     runs-on: ubuntu-latest
     steps:
       - name: Restore Vlang
@@ -357,7 +357,7 @@ jobs:
         run: v missdoc --exclude src/tests/ --verify .
 
   vet-check:
-    needs: [vab-compilation, linux-to-other-platforms-compilation]
+    needs: [linux-to-other-platforms-compilation]
     runs-on: ubuntu-latest
     steps:
       - name: Restore Vlang
