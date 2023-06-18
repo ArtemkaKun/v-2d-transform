@@ -1,4 +1,4 @@
-import transform
+import transform_2d
 
 fn test_normalize_vector_with_zero_x() {
 	check_if_vector_values_expected(normalize_vector(0, 1), 0, 1)
@@ -36,10 +36,10 @@ fn test_normalize_vector_with_one_x_and_ten_y() {
 	check_if_vector_values_expected(normalize_vector(1, 10), 0.09950371902099892, 0.9950371902099892)
 }
 
-fn normalize_vector(x f64, y f64) transform.Vector {
-	return transform.normalize_vector(transform.Vector{x, y})
+fn normalize_vector(x f64, y f64) transform_2d.Vector {
+	return transform_2d.normalize_vector(transform_2d.Vector{x, y})
 }
 
-fn check_if_vector_values_expected(result_vector transform.Vector, expected_x f64, expected_y f64) {
-	assert result_vector == transform.Vector{expected_x, expected_y}
+fn check_if_vector_values_expected(result_vector transform_2d.Vector, expected_x f64, expected_y f64) {
+	assert result_vector == transform_2d.Vector{expected_x, expected_y}
 }
