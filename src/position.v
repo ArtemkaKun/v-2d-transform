@@ -47,19 +47,19 @@ pub fn move_position(position Position, move_vector Vector) Position {
 // ```
 pub fn calculate_move_vector(direction Vector, speed f64, delta_time f64) !Vector {
 	if is_vector_normalized(direction) == false {
-		return error(transform_2d.direction_not_normalized)
+		return error(trnsfrm2d.direction_not_normalized)
 	}
 
 	if speed.eq_epsilon(0.0) {
-		return error(transform_2d.speed_is_zero_error)
+		return error(trnsfrm2d.speed_is_zero_error)
 	}
 
 	if speed < 0 {
-		return error(transform_2d.negative_speed_error)
+		return error(trnsfrm2d.negative_speed_error)
 	}
 
 	if delta_time.eq_epsilon(0.0) || delta_time < 0 {
-		return error(transform_2d.delta_time_smaller_than_zero_error)
+		return error(trnsfrm2d.delta_time_smaller_than_zero_error)
 	}
 
 	speed_per_frame := speed * delta_time
