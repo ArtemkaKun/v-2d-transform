@@ -1,4 +1,4 @@
-module transform_2d
+module trnsfrm2d
 
 import math
 

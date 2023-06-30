@@ -1,4 +1,4 @@
-import transform_2d
+import trnsfrm2d
 
 fn test_move_returns_expected_position_when_only_x_moved() {
 	move_position_and_check_if_expected(1, 0)
@@ -17,19 +17,19 @@ fn test_move_returns_expected_position_when_move_vector_is_negative() {
 }
 
 fn move_position_and_check_if_expected(expected_x f64, expected_y f64) {
-	new_position := transform_2d.move_position(get_zero_position(), transform_2d.Vector{expected_x, expected_y})
+	new_position := trnsfrm2d.move_position(get_zero_position(), trnsfrm2d.Vector{expected_x, expected_y})
 	check_if_position_values_expected(new_position, expected_x, expected_y)
 }
 
-fn get_zero_position() transform_2d.Position {
-	return transform_2d.Position{
+fn get_zero_position() trnsfrm2d.Position {
+	return trnsfrm2d.Position{
 		x: 0
 		y: 0
 	}
 }
 
-fn check_if_position_values_expected(result_position transform_2d.Position, expected_x f64, expected_y f64) {
-	assert result_position == transform_2d.Position{
+fn check_if_position_values_expected(result_position trnsfrm2d.Position, expected_x f64, expected_y f64) {
+	assert result_position == trnsfrm2d.Position{
 		x: expected_x
 		y: expected_y
 	}
