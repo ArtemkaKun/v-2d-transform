@@ -1,4 +1,4 @@
-module transform_2d
+module trnsfrm2d
 
 pub const (
 	speed_is_zero_error                = 'speed' + must_be_greater_than_zero_error
