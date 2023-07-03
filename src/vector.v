@@ -52,3 +52,16 @@ fn calculate_vector_magnitude(vector Vector) f64 {
 
 	return math.sqrt(x * x + y * y)
 }
+
+// calculate_distance_between_vectors Calculates the distance between two vectors.
+//
+// Example:
+// ```v
+// calculate_distance_between_vectors(Vector{1.0, 1.0}, Vector{2.0, 2.0}) // returns 1.414213562
+// ```
+pub fn calculate_distance_between_vectors(first_vector Vector, second_vector Vector) f64 {
+	x := first_vector.x - second_vector.x
+	y := first_vector.y - second_vector.y
+
+	return math.sqrt(x * x + y * y)
+}
