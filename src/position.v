@@ -1,5 +1,7 @@
 module trnsfrm2d
 
+import math
+
 pub const (
 	speed_is_zero_error                = 'speed' + must_be_greater_than_zero_error
 	negative_speed_error               = "Don't use negative speed! Use a negative vector instead."
@@ -65,4 +67,14 @@ pub fn calculate_move_vector(direction Vector, speed f64, delta_time f64) !Vecto
 	speed_per_frame := speed * delta_time
 
 	return Vector{direction.x * speed_per_frame, direction.y * speed_per_frame}
+}
+
+// calculate_distance_between_positions Calculates the distance between two positions.
+//
+// Example:
+// ```v
+// calculate_distance_between_positions(Position{1.0, 1.0}, Position{2.0, 2.0}) // returns 1.414213562
+// ```
+pub fn calculate_distance_between_positions(first_position Position, second_position Position) f64 {
+	return calculate_distance_between_vectors(first_position.Vector, second_position.Vector)
 }
