@@ -1,7 +1,5 @@
 module trnsfrm2d
 
-import math
-
 pub const (
 	speed_is_zero_error                = 'speed' + must_be_greater_than_zero_error
 	negative_speed_error               = "Don't use negative speed! Use a negative vector instead."
