@@ -324,7 +324,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Check markdown line length & code examples
-        run: v check-md -hide-warnings oksyntax .
+        run: v check-md -hide-warnings .
 
       - name: Check public methods without documentation
         run: v missdoc --exclude src/tests/ --verify .

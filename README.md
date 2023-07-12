@@ -19,7 +19,7 @@ v install ArtemkaKun.trnsfrm2d
 
 Then, import the module into your V code:
 
-```v
+```v oksyntax
 import artemkakun.trnsfrm2d
 ```
 
@@ -29,7 +29,7 @@ import artemkakun.trnsfrm2d
 
 Normalizing a Vector
 
-```v
+```v oksyntax
 import artemkakun.trnsfrm2d
 
 v := trnsfrm2d.Vector{1.0, 1.0}
@@ -38,7 +38,7 @@ normalized_vector := trnsfrm2d.normalize_vector(v) // returns Vector{0.707106782
 
 Calculating distance between Vectors
 
-```v
+```v oksyntax
 import artemkakun.trnsfrm2d
 
 v1 := trnsfrm2d.Vector{1.0, 1.0}
@@ -50,7 +50,7 @@ distance := trnsfrm2d.calculate_distance_between_vectors(v1, v2) // returns 1.41
 
 Calculating a move Vector
 
-```v
+```v oksyntax
 import artemkakun.trnsfrm2d
 
 direction := trnsfrm2d.Vector{0, 1}
@@ -61,7 +61,7 @@ move_vec := trnsfrm2d.calculate_move_vector(direction, speed, delta_time)! // re
 
 Moving a Position
 
-```v
+```v oksyntax
 import artemkakun.trnsfrm2d
 
 pos := trnsfrm2d.Position{
@@ -79,7 +79,7 @@ new_pos := trnsfrm2d.move_position(pos, move_vec) // returns Position{ x: 1, y: 
 
 Calculating distance between Vectors
 
-```v
+```v oksyntax
 import artemkakun.trnsfrm2d
 
 p1 := trnsfrm2d.Position{
