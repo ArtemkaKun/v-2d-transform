@@ -64,8 +64,16 @@ Moving a Position
 ```v
 import artemkakun.trnsfrm2d
 
-pos := trnsfrm2d.Position{x: 0, y: 0}
-move_vec := trnsfrm2d.Vector{ x: 1, y: 0 }
+pos := trnsfrm2d.Position{
+    x: 0
+    y: 0
+}
+
+move_vec := trnsfrm2d.Vector{
+    x: 1
+    y: 0
+}
+
 new_pos := trnsfrm2d.move_position(pos, move_vec) // returns Position{ x: 1, y: 0 }
 ```
 
@@ -74,8 +82,16 @@ Calculating distance between Vectors
 ```v
 import artemkakun.trnsfrm2d
 
-p1 := trnsfrm2d.Position{x: 1.0, y: 1.0}
-p2 := trnsfrm2d.Position{x: 2.0, y: 2.0}
+p1 := trnsfrm2d.Position{
+    x: 1.0
+    y: 1.0
+}
+
+p2 := trnsfrm2d.Position{
+    x: 2.0
+    y: 2.0
+}
+
 distance := trnsfrm2d.calculate_distance_between_positions(p1, p2) // returns 1.414213562
 ```
 
