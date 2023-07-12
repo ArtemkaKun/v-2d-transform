@@ -106,4 +106,4 @@ Your donations will help me to continue to develop this project and the V langua
 
 ## More about my projects
 
-Subscribe to my Mastodon account to find more info about my projects.
+Subscribe to [my Mastodon account](https://mastodon.social/@yuart) to find more info about my projects.
